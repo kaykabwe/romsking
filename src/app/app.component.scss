@@ -28,6 +28,13 @@ nz-page-header-extra {
     align-items: center;
 }
 
+#construction-ribbon {
+    position: relative;
+    background-image: url("../assets/images/1467074_scaled.png");
+    height: 50px;
+    bottom: 18px;
+}
+
 /* formula ==> target / centext = result */
 nz-page-header-title {
     height: 3.125em;

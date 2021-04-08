@@ -1,5 +1,6 @@
 body {
-    font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
+    font-family: "Oswald Bold", "Raleway Regular", Arial, Helvetica, sans-serif;
+    background-image: url("assets/images/asfalt/asfalt.png");
 }
 
 /* Raleway fonts */
@@ -91,4 +92,80 @@ body {
 @font-face{
     font-family: "Raleway ThinItalic";
     src: url("assets/fonts/raleway/Raleway-ThinItalic.ttf");
+}
+
+/* Oswald fonts */
+@font-face {
+    font-family: "Oswald BoldItalic";
+    src: url("assets/fonts/oswald/Oswald-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Bold";
+    src: url("assets/fonts/oswald/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Demi-BoldItalic";
+    src: url("assets/fonts/oswald/Oswald-Demi-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Oswald DemiBold";
+    src: url("assets/fonts/oswald/Oswald-DemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Extra-LightItalic";
+    src: url("assets/fonts/oswald/Oswald-Extra-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "Oswald ExtraLight";
+    src: url("assets/fonts/oswald/Oswald-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Oswald HeavyItalic";
+    src: url("assets/fonts/oswald/Oswald-HeavyItalic.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Heavy";
+    src: url("assets/fonts/oswald/Oswald-Heavy.ttf");
+}
+
+@font-face {
+    font-family: "Oswald LightItalic";
+    src: url("assets/fonts/oswald/Oswald-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Light";
+    src: url("assets/fonts/oswald/Oswald-Light.ttf");
+}
+
+@font-face {
+    font-family: "Oswald MediumItalic";
+    src: url("assets/fonts/oswald/Oswald-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Medium";
+    src: url("assets/fonts/oswald/Oswald-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Oswald RegularItalic";
+    src: url("assets/fonts/oswald/Oswald-RegularItalic.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Regular";
+    src: url("assets/fonts/oswald/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Stencil";
+    src: url("assets/fonts/oswald/Oswald-Stencil.ttf");
 }
