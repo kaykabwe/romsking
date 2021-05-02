@@ -1,0 +1,70 @@
+/* Overall CSS design */
+#site-wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    width: 88.626%;  /* 1200px */
+}
+
+.layout {
+    min-height: 100vh;
+}
+
+nz-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+nz-header {
+    height: fit-content;
+    padding: 18px 12px;
+}
+
+nz-page-header {
+    height: fit-content;
+}
+
+nz-page-header-extra {
+    display: flex;
+    align-items: center;
+}
+
+#construction-ribbon {
+    position: relative;
+    background-image: url("../../assets/images/1467074_scaled.png");
+    height: 50px;
+    bottom: 18px;
+}
+
+/* formula ==> target / centext = result */
+nz-page-header-title {
+    height: 3.125em;
+    font-size: 3em; // 48px
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 479px) { 
+
+    /*#site-wrapper {
+        max-width: 479px;
+    }*/
+
+    nz-avatar {
+        display: flex;
+        justify-content: center;
+    }
+
+    nz-page-header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    nz-content {
+        background-color: orange;
+    }
+
+    nz-footer {
+        font-size: 10px;
+    }
+    
+}

@@ -1,0 +1,69 @@
+.wrapper {
+  background-image: url("../../assets/images/773716.jpg");
+  background-size: cover;
+  width: 100%;
+  height: fit-content;
+}
+
+nz-header {
+  height: fit-content;
+  background-color: inherit;
+}
+  
+nz-page-header {
+  background-color: transparent;
+}
+
+nz-footer {
+  background: #7dbcea;
+  color: #fff;
+}
+
+nz-avatar {
+  margin-right: 18px;
+  width: 60px;
+  height: 60px;
+}
+
+nz-page-header-extra {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 60px;
+}
+
+nz-page-header-extra > ul {
+  background-color: transparent;
+  border-bottom: 0px;
+}
+
+section {
+  margin: 12px 50px;
+}
+
+.mission-statement {
+  font-family: "Oswald HeavyItalic", "Raleway Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  text-align: center;
+  width: 580px;
+}
+
+#service-images {
+  background-color: beige;
+}
+
+[nz-carousel-content] > img {
+  object-fit: cover;
+}
+
+#team > div {
+  padding:30px;
+  width: 100%;
+}
+
+#contact-us > div {
+  background-color: grey;
+  padding:30px;
+  width: 100%;
+}
