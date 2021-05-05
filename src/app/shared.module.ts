@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -16,6 +17,7 @@ import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
   imports: [
     CommonModule,
     NzAvatarModule,
+    NzButtonModule,
     NzCardModule,
     NzCarouselModule,
     NzDividerModule,
@@ -27,6 +29,7 @@ import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
   exports: [
     CommonModule,
     NzAvatarModule,
+    NzButtonModule,
     NzCardModule,
     NzCarouselModule,
     NzDividerModule,

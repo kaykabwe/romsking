@@ -1,6 +1,7 @@
 .wrapper {
   background-image: url("../../assets/images/773716.jpg");
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: fit-content;
 }
@@ -9,20 +10,28 @@ nz-header {
   height: fit-content;
   background-color: inherit;
 }
-  
-nz-page-header {
-  background-color: transparent;
-}
 
 nz-footer {
-  background: #7dbcea;
-  color: #fff;
+  text-align: center;
 }
 
-nz-avatar {
+/*nz-avatar {
   margin-right: 18px;
   width: 60px;
   height: 60px;
+}*/
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.logo > img {
+  width: 80px;
+  width: 80px;
 }
 
 nz-page-header-extra {
@@ -38,7 +47,7 @@ nz-page-header-extra > ul {
 }
 
 section {
-  margin: 12px 50px;
+  margin: 96px 50px;
 }
 
 .mission-statement {
@@ -63,7 +72,22 @@ section {
 }
 
 #contact-us > div {
-  background-color: grey;
+  background-image: url("../../assets/images/7d5c68d55d3e26cf251acecfe82da7d3.jpg");
+  background-size: contain;
   padding:30px;
   width: 100%;
+}
+ #contact-us > div > div[nz-col] {
+   color: yellow;
+ }
+
+ h3, h1 {
+   color: #ffffff
+ }
+
+.team-member-image {
+  border-radius: 50%;
+  margin: 6px auto;
+  width: 150px;
+  height: 225px;
 }
