@@ -1,38 +1,135 @@
-<div id="site-wrapper">
-  <nz-layout>
-    <nz-header>
-      <nz-page-header nzBackIcon [nzGhost]="false">
-        <nz-avatar nz-page-header-avatar nzSrc="https://avatars0.githubusercontent.com/u/22736418?s=88&v=4"> </nz-avatar>
-        <nz-page-header-title>{{title}}</nz-page-header-title>
-        <nz-page-header-extra>
-          <ul nz-menu nzMode="horizontal">
-            <li nz-menu-item>
-              <a routerLink="">landing page</a>
-            </li>
-            <li nz-menu-item>
-              <a href="#">about us</a>
-            </li>
-            <li nz-menu-item>
-              <a href="#">services</a>
-            </li>
-            <li nz-menu-item>
-              <a href="#">projects</a>
-            </li>
-            <li nz-menu-item>
-              <a href="#">team</a>
-            </li>
-            <li nz-menu-item>
-              <a href="#">contact us</a>
-            </li>
+
+<nz-layout>
+  <div class="wrapper">
+  <nz-header>
+    <!--<div class="logo"><img src="../../assets/images/ROMSKING LOGO.jpg" alt="Romskin logo"></div>-->
+    <nz-page-header nzBackIcon [nzGhost]="true"  >
+
+      <nz-page-header-title>Romsking</nz-page-header-title>
+      <!--<nz-page-header-subtitle>
+        Providing technical solutions while maintaining the highest standard of industry HSE policies
+      </nz-page-header-subtitle>-->
+      <nz-page-header-extra>
+        <ul nz-menu nzMode="horizontal" >
+          <li nz-menu-item>
+            <a href="#about-us">about us</a>
+          </li>
+          <li nz-menu-item>
+            <a href="#services">services</a>
+          </li>
+          <li nz-menu-item>
+            <a href="#">projects</a>
+          </li>
+          <li nz-menu-item>
+            <a href="#team">team</a>
+          </li>
+          <li nz-menu-item>
+            <a href="#contact-us">contact us</a>
+          </li>
+        </ul>
+      </nz-page-header-extra>
+    </nz-page-header>
+  </nz-header>
+  <nz-content>
+    <section id="about-us">
+      <nz-divider nzOrientation="left" nzText="About us"></nz-divider>
+      <div nz-row>
+        <div nz-col [nzSpan]="24">
+          <h3 class="mission-statement">
+            Providing technical solutions while maintaining the highest standard of industry HSE policies
+          </h3>
+          <p>
+            Our experience and common-sense approach to construction allows us to perform a variety of building projects. 
+            Romsking Technical Services combines the latest technology, quality and safety with effective capabilities 
+            in Construction, Engineering, Procurement and Commissioning to provide complete comprehensive and 
+            value-engineered solutions to the customers in building infrastructure (& green environment) and power 
+            industries
+          </p>
+          <button nz-button nzType="default">- Read More</button>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <nz-divider nzOrientation="left" nzText="Services"></nz-divider>
+      <div nz-row>
+        <div nz-col nzSpan="12">
+          <p>ROMSKING’s scope of action includes:</p>
+          <ul>
+              <li>Construction Project Management</li>
+              <li>Basic and Detailed Engineering Services(Civil, Structural, Mechanical, Electrical, Nuclear)</li>
+              <li>Project Quality Control</li>
+              <li>Operation & Maintenance</li>
+              <li>Material Supply and Management</li>
+              <li>Technical Assistance On Site</li>
+              <li>Compliance & Commissioning</li>
+              <li>Manpower (Human Resource) & Training</li>
           </ul>
-        </nz-page-header-extra>
-      </nz-page-header>
-    </nz-header>
-    <nz-content>
-      <div id="construction-ribbon"></div>
-      <p>This is content</p>
-      <p>Content thats going to change your life.</p>
-    </nz-content>
-    <nz-footer>Ant Design ©2021 By Ezeecode technologies</nz-footer>
-  </nz-layout>
-</div>  <!-- end of site wrapper-->
+        </div>
+        <div id="service-images" nz-col nzSpan="12">
+          <nz-carousel [nzEffect]="effect">
+            <div nz-carousel-content *ngFor="let source of projectsArray">
+              <img src={{source}} />
+            </div>
+          </nz-carousel>
+        </div>
+      </div>
+      <button nz-button nzType="default">- Read More</button>
+    </section>
+    <section id="team">
+      <nz-divider nzOrientation="left" nzText="Our Team"></nz-divider>
+      <div nz-row nzGutter="16" nzJustify="center">
+        <div nz-col [nzSpan]="6">
+          <nz-card [nzCover]="coverTemplate">
+            <nz-card-meta nzTitle="Mercy Tembo" nzDescription="Civil/Structural Manager"></nz-card-meta>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="6">
+          <nz-card [nzCover]="coverTemplate">
+            <nz-card-meta nzTitle="Reynolds Mumba" nzDescription="Project Manager"></nz-card-meta>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="6">
+          <nz-card [nzCover]="coverTemplate">
+            <nz-card-meta nzTitle="Robson Kakuwa" nzDescription="Electrical Manager"></nz-card-meta>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="6">
+          <nz-card [nzCover]="coverTemplate">
+            <nz-card-meta nzTitle="Patrick Mumba" nzDescription="Mechanical Manager"></nz-card-meta>
+          </nz-card>
+        </div>
+        <ng-template #coverTemplate>
+          <img alt="kaunda" src="../../assets/images/team/kaunda.jpg" class="team-member-image" />
+        </ng-template>
+      </div>
+      <button nz-button nzType="default">- Read More</button>
+    </section>
+    <section id="contact-us">
+      <nz-divider nzOrientation="left" nzText="Contact us"></nz-divider>
+      <div nz-row [nzGutter]="32">
+        <div nz-col nzSpan="12">
+          <h1>Have a project In mind?</h1>
+          <p>
+            Cu omnium propriae mel. Eum detracto suscipit ut, et vix splendide scriptorem. His exerci integre 
+            moderatius et, ea vis zril choro deseruisse. Ea qui omnesque mnesarchum liberavisse.
+          </p>
+        </div>
+        <div nz-col nzSpan="12">
+          <div style="width: fit-content; margin: 0 auto">
+            <h3>Email us</h3>
+            <p>reynoldsmumba21@gmail.com</p>
+            <h3>Find us</h3>
+            <p>Suit 316, 3rd Floor Anchor House</p>
+            <p>Cairo Road, Lusaka, Zambia</p>
+            <h3>Call us</h3>
+            <p>+260 973 224 002</p>
+            <p>+260 956 552 848</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </nz-content>
+  <nz-footer>Acacia works ©2021 Implemented By Ezeecode Technologies</nz-footer>
+  </div>
+</nz-layout>

@@ -13,7 +13,7 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared.module';
 import { HomeComponent } from './home/home.component';
-import { LandingComponent } from './landing/landing.component';
+import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
 
 registerLocaleData(en);
 
@@ -21,7 +21,6 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     HomeComponent,
-    LandingComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +28,8 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    NgZorroAntdMobileModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

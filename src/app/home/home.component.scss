@@ -1,70 +1,121 @@
-/* Overall CSS design */
-#site-wrapper{
-    margin-right: auto;
-    margin-left: auto;
-    width: 88.626%;  /* 1200px */
-}
 
-.layout {
-    min-height: 100vh;
+/*
+@media screen and (min-width: 576px) {
+  
 }
+*/
 
-nz-avatar {
-    width: 100px;
-    height: 100px;
-}
-
-nz-header {
+@media screen and (min-width: 992px) {
+  /* for desktops */
+  .wrapper {
+    background-image: url("../../assets/images/773716.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
     height: fit-content;
-    padding: 18px 12px;
-}
+  }
 
-nz-page-header {
+  nz-header {
+    position: sticky;
+    top: 0;
     height: fit-content;
-}
+    width: 100%;
+    background-color: #f0f2f5;
+    z-index: 1;
+  }
 
-nz-page-header-extra {
+  nz-footer {
+    text-align: center;
+  }
+
+  /*nz-avatar {
+    margin-right: 18px;
+    width: 60px;
+    height: 60px;
+  }*/
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
+
+  .logo > img {
+    width: 80px;
+    width: 80px;
+  }
+
+  nz-page-header-extra {
     display: flex;
     align-items: center;
-}
-
-#construction-ribbon {
     position: relative;
-    background-image: url("../../assets/images/1467074_scaled.png");
-    height: 50px;
-    bottom: 18px;
-}
+    right: 3.75em;
+  }
 
-/* formula ==> target / centext = result */
-nz-page-header-title {
-    height: 3.125em;
-    font-size: 3em; // 48px
-    display: flex;
-    align-items: center;
-}
+  nz-page-header-extra > ul {
+    background-color: transparent;
+    border-bottom: 0px;
+  }
 
-@media screen and (max-width: 479px) { 
+  nz-page-header-title {
+    display: block;
+  }
 
-    /*#site-wrapper {
-        max-width: 479px;
-    }*/
+  li[nz-menu-item] a {
+    color: #ff6700;
+  }
 
-    nz-avatar {
-        display: flex;
-        justify-content: center;
-    }
+  nz-page-header-title {
+    color: #ff6700;
+  }
 
-    nz-page-header {
-        display: flex;
-        justify-content: center;
-    }
-    
-    nz-content {
-        background-color: orange;
-    }
+  section {
+    margin: 96px 50px;
+    scroll-margin-top: 6em;   /* to fix bookmarks remaining behind header. Temp solution s*/
+  }
 
-    nz-footer {
-        font-size: 10px;
-    }
-    
+  .mission-statement {
+    font-family: "Oswald HeavyItalic", "Raleway Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    width: 580px;
+  }
+
+  #service-images {
+    background-color: beige;
+  }
+
+  [nz-carousel-content] > img {
+    object-fit: cover;
+  }
+
+  #team > div {
+    padding: 30px;
+    width: 100%;
+  }
+
+  #contact-us > div {
+    background-image: url("../../assets/images/7d5c68d55d3e26cf251acecfe82da7d3.jpg");
+    background-size: contain;
+    padding: 30px;
+    width: 100%;
+  }
+  #contact-us > div > div[nz-col] {
+    color: yellow;
+  }
+
+  h3, h1 {
+    color: #ffffff
+  }
+
+  .team-member-image {
+    border-radius: 50%;
+    margin: 6px auto;
+    width: 150px;
+    height: 225px;
+  }
+
 }
